@@ -1,6 +1,6 @@
 {
   "name": "graphql-cli-get-raw-schema",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "GraphQL CLI Get Raw Schema plugin",
   "files": [
     "LICENSE",

@@ -73,7 +73,7 @@ export async function handler (context: any, argv: { endpointName: string, watch
       .then(res => res.text())
 
     let schemaFile = config.schemaPath as string
-    schemaFile = `${schemaFile.slice(0, schemaFile.lastIndexOf('.') - 1)}.json`
+    schemaFile = `${schemaFile.slice(0, schemaFile.lastIndexOf('.'))}.json`
     const schemaPath = relative(process.cwd(), schemaFile)
 
     writeFileSync(schemaPath, newSchemaJson)
